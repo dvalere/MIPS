@@ -24,9 +24,15 @@ jal process_whole_string
 li $v0, 10
 syscall
 
+process_whole_string:
+
+looping:
+
 validchar:
+li $t0, 65 #ASCII for A
+li $t1, 90 #ASCII for Z
 
 isdelimiter:
-process_whole_string:
+
 looping:
 process_substring:
