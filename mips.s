@@ -24,6 +24,7 @@ li $a1, 1000 #Making it so the max amount of characters that can be read is 1000
 syscall
 
 process_whole_string:
+
 #Will be iterating through the string here
 #1. Iterate through string 2. If a slash is found, run process substring
 
