@@ -23,6 +23,10 @@ la $a0, buffer #Input will be stored in buffer, $a0 is basically pointing to buf
 li $a1, 1000 #Making it so the max amount of characters that can be read is 1000
 syscall
 
+jal process_whole_string
+li $v0, 10
+syscall
+
 process_whole_string:
 
 
