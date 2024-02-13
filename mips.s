@@ -9,6 +9,8 @@ slash: .asciiz "/"
 space: .asciiz " "
 nosuch: .asciiz "-"
 
+.text
+.globl main
 main:
 li $v0, 8 #Reads from the string
 
