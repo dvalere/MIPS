@@ -24,12 +24,9 @@ jal process_whole_string
 li $v0, 10
 syscall
 
-process_whole_string:
-
-looping:
-
+validchar:
 
 isdelimiter:
-
-
+process_whole_string:
+looping:
 process_substring:
