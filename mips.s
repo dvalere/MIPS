@@ -6,6 +6,9 @@ slash: .asciiz "/"
 space: .asciiz " "
 nosuch: .asciiz "-"
 
+main:
+li $v0, 8 #Reads from the string
+
 
 
 
