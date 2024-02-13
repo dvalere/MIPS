@@ -30,14 +30,16 @@ li $s1, 0 #Index holder
 li $s2, 0 #Movement holder
 li $s3, 0 #Where index started
 
-
 looping:
+
 
 validchar:
 li $t0, 65 #ASCII for A
 li $t1, 90 #ASCII for Z
 li $t2, 97 #ASCII for a
 li $t3, 122 #ASCII for z
+
+delimiter:
 li $t4, 47 #ASCII for /
 
 looping_whole:
