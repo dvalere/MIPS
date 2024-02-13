@@ -4,10 +4,12 @@
 #Need to: Go over each character, check if it's a "/", if not, check if its within valid range
 
 .data
+buffer: .space 1000 #storage
 prompt: .asciiz "Enter: "
 slash: .asciiz "/"
 space: .asciiz " "
 nosuch: .asciiz "-"
+
 
 .text
 .globl main
