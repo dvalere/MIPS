@@ -31,6 +31,8 @@ looping:
 validchar:
 li $t0, 65 #ASCII for A
 li $t1, 90 #ASCII for Z
+li $t2, 97 #ASCII for a
+li $t3 122 #ASCII for z
 
 isdelimiter:
 
