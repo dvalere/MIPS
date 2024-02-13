@@ -14,6 +14,9 @@ nosuch: .asciiz "-"
 .text
 .globl main
 main:
+li $v0, 4 
+la $a0, prompt #Printing prompt
+syscall 
 li $v0, 8 #Reads from the string
 
 
