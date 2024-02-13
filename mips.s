@@ -39,7 +39,11 @@ li $t4, 47 #ASCII for /
 
 looping_whole:
 
+
 process_substring:
+move $s0, a0 #Putting input into $s0
+li $s1, 0 #Index holder
+li $s2, 0 #Movement holder
 
 looping_sub:
 
