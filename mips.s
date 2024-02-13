@@ -37,5 +37,11 @@ li $t2, 97 #ASCII for a
 li $t3, 122 #ASCII for z
 li $t4, 47 #ASCII for /
 
-looping:
+looping_whole:
+
 process_substring:
+
+looping_sub:
+
+add_number:
+
