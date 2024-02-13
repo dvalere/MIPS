@@ -10,24 +10,26 @@ slash: .asciiz "/"
 space: .asciiz " "
 nosuch: .asciiz "-"
 
-
 .text
 .globl main
 main:
 li $v0, 4 
 la $a0, prompt #Printing prompt
 syscall 
-
 li $v0, 8 #Reads from the string
 la $a0, buffer #Input will be stored in buffer, $a0 is basically pointing to buffer, will be used in process_whole_string 
 li $a1, 1000 #Making it so the max amount of characters that can be read is 1000
 syscall
-
 jal process_whole_string
 li $v0, 10
 syscall
 
 process_whole_string:
+
+looping:
+
+
+isdelimiter:
 
 
 process_substring:
